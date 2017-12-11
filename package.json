@@ -1,0 +1,40 @@
+{
+  "name": "ovh-iconlib-provider-svg-cleaner-svgo",
+  "version": "0.1.0",
+  "description": "svgo implementation of SVG Cleaner provider",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ovh-ux/ovh-iconlib-provider-svg-cleaner.git"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "jshint lib/*.js",
+    "pretest": "npm run lint",
+    "test": "istanbul cover jasmine"
+  },
+  "keywords": [
+    "svgo",
+    "SVG",
+    "Cleaner",
+    "Provider"
+  ],
+  "author": "OVH",
+  "license": "BSD-3-Clause",
+  "devDependencies": {
+    "cz-ovh-commit": "^1.0.0",
+    "istanbul": "0.4.5",
+    "jasmine": "2.8.0",
+    "jshint": "2.9.5"
+  },
+  "dependencies": {
+    "iconlib-provider-svg-cleaner": "git+https://github.com/ovh-ux/ovh-iconlib-provider-svg-cleaner.git",
+    "rduk-errors": "1.2.3",
+    "rduk-provider": "1.0.1",
+    "svgo": "1.0.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-ovh-commit"
+    }
+  }
+}
