@@ -4,7 +4,7 @@
   "description": "svgo implementation of SVG Cleaner provider",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ovh-ux/ovh-iconlib-provider-svg-cleaner.git"
+    "url": "https://github.com/ovh-ux/ovh-iconlib-provider-svg-cleaner-svgo"
   },
   "main": "lib/index.js",
   "scripts": {
