@@ -27,7 +27,7 @@
     "jshint": "2.9.5"
   },
   "dependencies": {
-    "iconlib-provider-svg-cleaner": "git+https://github.com/ovh-ux/ovh-iconlib-provider-svg-cleaner.git",
+    "ovh-iconlib-provider-svg-cleaner": "0.1.0",
     "rduk-errors": "1.2.3",
     "rduk-provider": "1.0.1",
     "svgo": "1.0.3"
