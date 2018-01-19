@@ -1,9 +1,14 @@
-# Icon Library - svgo implementation of SVG cleaner provider
+# Icon Library - SVG cleaner - SVGO
+
+[![Build Status](https://travis-ci.org/ovh-ux/ovh-iconlib-provider-svg-cleaner-svgo.svg?branch=master)](https://travis-ci.org/ovh-ux/ovh-iconlib-provider-svg-cleaner-svgo)
+[![Coverage Status](https://coveralls.io/repos/github/ovh-ux/ovh-iconlib-provider-svg-cleaner-svgo/badge.svg?branch=master)](https://coveralls.io/github/ovh-ux/ovh-iconlib-provider-svg-cleaner-svgo?branch=master)
+
+[SVGO](https://github.com/svg/svgo) implementation of SVG cleaner base provider
 
 ## Installation
 
 ```bash
-npm install --save "url of svg cleaner base provider" "url of svgo implementation of svg cleaner provider"
+npm install --save "ovh-iconlib-provider-svg-cleaner" "ovh-iconlib-provider-svg-cleaner-svgo"
 ```
 
 ## Configuration
@@ -16,17 +21,18 @@ npm install --save "url of svg cleaner base provider" "url of svgo implementatio
    providers:
      -
        name: svgo
-       type: iconlib-provider-svg-cleaner-svgo
+       type: ovh-iconlib-provider-svg-cleaner-svgo
        plugins:
-         - iconlib-provider-svg-cleaner-svgo/lib/plugins/agressiveCollapseGroups
-         - iconlib-provider-svg-cleaner-svgo/lib/plugins/removeClipPaths
-         - iconlib-provider-svg-cleaner-svgo/lib/plugins/cleanStyles
+         - ovh-iconlib-provider-svg-cleaner-svgo/lib/plugins/agressiveCollapseGroups
+         - ovh-iconlib-provider-svg-cleaner-svgo/lib/plugins/removeClipPaths
+         - ovh-iconlib-provider-svg-cleaner-svgo/lib/plugins/cleanStyles
 ```
 
 ## Usage
 
 ```js
-const svg = require('ovh-iconlib-provider-svg-cleaner').getInstance(); // default instance loaded according to the configuration
+// default instance loaded according to the configuration
+const svg = require('ovh-iconlib-provider-svg-cleaner').getInstance();
 
 const dirty = '<svg xmlns="http://www.w3.org/2000/svg">...</svg>';
 const pristine = '<svg xmlns="http://www.w3.org/2000/svg">...</svg>';
