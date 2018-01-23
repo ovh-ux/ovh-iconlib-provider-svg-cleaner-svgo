@@ -10,8 +10,9 @@
   "scripts": {
     "lint": "jshint lib/*.js",
     "pretest": "npm run lint",
-    "test": "istanbul cover jasmine",
-    "posttest": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+    "test": "istanbul cover jasmine --report cobertura",
+    "report": "istanbul report",
+    "coveralls": "npm run report && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "keywords": [
     "cleaner",
